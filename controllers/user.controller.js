@@ -41,7 +41,7 @@ module.exports.deleteUser = async (req, res) => {
         return res.status(400).send('ID unknow : ' + req.params.id)
 
     try{
-        await UserModel.remove({ _id: req.params.id}).exec();
+        await UserModel.deleteOne({ _id: req.params.id}).exec();
         res.status(200).json({ message: "Successfully deleted. "});
     } catch (err) {
         return res.status(500).json({ message: err });

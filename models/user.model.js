@@ -43,6 +43,7 @@ const userSchema = new mongoose.Schema(
                     favorite: Boolean,
                     tag: [String],
                     timestamp: Number,
+                    updateAt: Number
                 }
             ]
         },

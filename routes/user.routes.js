@@ -13,7 +13,6 @@ router.get('/logout', authController.logout);
 router.get('/:id', userController.userInfo);
 router.put('/:id', userController.updateComment);
 router.delete('/:id', userController.deleteUser);
-router.patch('/:id', userController.updateComment);
 
 //offers
 router.patch('/add-offer/:id', offersController.addOffer);

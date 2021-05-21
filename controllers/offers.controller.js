@@ -17,7 +17,7 @@ module.exports.addOffer = async (req, res) => {
                         description: req.body.description,
                         favorite: false,
                         status: 1,
-                        tag: req.body.tag,
+                        tags: req.body.tags,
                         timestamps: new Date().getTime()
                     },
                 },

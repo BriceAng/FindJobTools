@@ -14,7 +14,7 @@ const Navbar = () => {
             <div className="nav-container">
                 <div className="logo">
                     <NavLink exact to="/">
-                        <div className="logo">
+                        <div className="logo d-flex">
                             <img src="" alt="" />
                             <h3>FindJOB</h3>
                         </div>
